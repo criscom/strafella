@@ -1,0 +1,123 @@
+.box {
+    background-color: rgb(229,229,229);
+    border: 1px solid rgb(209,209,209);
+    @include text-shadow(rgb(249,249,249) 0 1px 0);
+    padding: 12px 16px 16px 16px;
+    @include border-radius(11px);
+}
+
+#block-system-main-menu,
+#block-menu-menu-secondary-menu {
+    @extend .box;
+}
+
+
+#block-block-1 {
+    p {
+        font-size: 16px;
+    }
+}
+
+    #block-block-1,
+    #block-menu-menu-rechte-sidebar {  
+        @extend .box;
+        background-color: transparent;
+        box-shadow: 0 0 1px #ddd;
+}
+
+#block-menu-menu-rechte-sidebar {
+    h2 {
+        font-weight: normal;
+        margin: 0;
+        font-size: 22px;
+    }
+    ul {
+        margin-top: 0;
+    }
+    li {
+        @include hyphens();
+        position: relative;
+        span {
+            padding-right: 4px;
+            color: darken($gray,15%);
+            top: 4px;
+        }
+    }
+    li.is-active-trail {
+        span {
+            color: darken($gray, 45%);
+        }
+    }
+}
+
+
+.sidebar {
+    ul {
+        padding-left: 0;
+        @include no-bullets;
+        li {
+            font-size: 16px;
+            position: relative;
+        }
+        .glyphicon,
+        .halflings {
+            position: relative;
+            font-size: 12px;
+            font-size: 0.75rem;
+            color: $gray;
+            padding-right: 4px;
+        }
+        .glyphicon {
+            top: 0 !important;
+            bottom: 5px;
+        }
+        .halflings {
+            top: 5px;
+        }
+        li.menu__item.is-leaf,
+        li.menu__item.is-expanded {
+            @include no-bullets;
+            padding: 4px 0;
+            a {
+                text-decoration: none;
+                &:hover {
+                    text-decoration: hover;
+                    color: $green;
+                }
+                &.active {
+                    color: $green;
+                }
+            }
+        }
+        li.menu__item.is-active-trail  {
+            // border-bottom: 1px solid darken($gray,20%);
+            // @include box-shadow(0 4px 4px -5px $black);
+            // margin-bottom: 4px;
+            span {
+                color: darken($gray,14%);
+
+            }
+        }
+        .nolink>span {
+            font-weight: 500;
+            color: $black !important;
+        }
+        // TEAM
+        li.menu__item.is-expanded ul.menu {
+            li {
+                padding-left: 16px;
+            }
+            li.last {
+                margin-bottom: 16px;
+            }
+        }
+    }
+}
+
+@include breakpoint($max959) {
+    #block-block-1,
+    #block-menu-menu-rechte-sidebar  {
+        @include box-shadow(0 0 0 0);
+        border: none;
+    }
+}

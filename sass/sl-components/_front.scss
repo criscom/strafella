@@ -1,0 +1,29 @@
+/* CSS code for panel page two cols two rows
+** PANEL page
+** Two column criscom
+** added by criscom
+** /front
+**
+*/
+
+.front {
+    h3 {
+        margin-top: 0;
+        margin-bottom: 4px;
+        font-size: 22px;
+        font-weight: normal;
+    }
+    p.title {
+        font-size: 28px;
+        color: lighten($black, 10%);
+        // @include text-shadow(0px 1px 1px rgba(150,150,150,1));
+        margin-bottom: 36px;
+        padding-bottom: 36px;
+        border-bottom: 1px solid $gray;
+    }
+    .field-name-body {
+        p:first-child {
+            margin-top: 0;
+        }
+    }
+}

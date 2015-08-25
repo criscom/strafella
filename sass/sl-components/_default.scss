@@ -1,0 +1,60 @@
+/* CSS code for default stylings
+** apply generally for all pages
+** added by criscom
+*/
+
+.main h1{
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+.view-startseite,
+.view-artikelveroeffentlichungen {
+    .views-row {
+        margin-bottom: 36px;
+        padding-bottom: 18px;
+        border-bottom: 1px solid $gray;        
+    }
+}
+
+.node-team {
+    .group-left {
+        width: 25%;
+        margin-right: 1%;
+    }
+    .group-right {
+        width: 74%;
+    }
+}
+
+.view-vortr-ge-und-seminare {
+    h4 {
+        margin: 0;
+        font-size: 18px;
+    }
+    .views-field-field-von,
+    .views-field-field-bis {
+        float: left;
+    }
+    .views-field-field-von {
+        margin-right: 4px;
+    }
+    .views-field-field-place {
+        clear: both;
+    }
+    .views-row {
+        margin-bottom: 36px;
+        padding-bottom: 18px;
+        border-bottom: 1px solid $gray;  
+    }
+    .views-row-1 {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: 0;
+    }
+    .views-row-2 {
+        margin-top: 18px;
+        padding-top: 36px;
+        border-top: 1px solid $gray;  
+    }
+}
