@@ -114,10 +114,16 @@
     }
 }
 
-@include breakpoint($max959) {
+@include breakpoint($max959) { // remove boxshadow for the boxes in the right sidebar
     #block-block-1,
     #block-menu-menu-rechte-sidebar  {
         @include box-shadow(0 0 0 0);
         border: none;
+    }
+}
+
+@include breakpoint($desktop) { // hide menu item "Team" in main menu on desktop browsers
+    #block-system-main-menu ul li.last {
+        display: none;
     }
 }

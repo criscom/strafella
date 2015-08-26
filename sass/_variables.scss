@@ -133,7 +133,7 @@ $green: #007C31;
 // Standard min
 $mobile: min-width 0px;
 $tablet: min-width 569px;
-$desktop: min-width 769px;
+$desktop: min-width 768px;
 $large: min-width 960px;
 $xlarge: min-width 1200px;
 $xxlarge: min-width 1500px;
@@ -144,6 +144,7 @@ $max959: max-width 959px;
 $max768: max-width 768px; // mobilescreens
 $max767: max-width 767px;
 $max568: max-width 568px;
+$max480: max-width 480px;
 
 // Ranges
 $range980-1199: 980px 1199px;

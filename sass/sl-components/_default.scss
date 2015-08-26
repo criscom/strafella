@@ -3,13 +3,28 @@
 ** added by criscom
 */
 
-.main h1{
+img {
+    width: 100% !important;
+    height: auto !important;
+}
+
+img.mietzins {
+    width: 150px !important;
+    height: 228px !important;
+}
+
+.main h1 {
     text-transform: uppercase;
     margin-top: 0;
+    @include breakpoint($max480) { 
+        margin-top: 16px;
+        font-size: 24px;
+    }
 }
 
 .view-startseite,
-.view-artikelveroeffentlichungen {
+.view-artikelveroeffentlichungen,
+.view-team {
     .views-row {
         margin-bottom: 36px;
         padding-bottom: 18px;
@@ -24,6 +39,12 @@
     }
     .group-right {
         width: 74%;
+    }
+}
+
+.view-team {
+    .views-field-view-node a {
+        @extend .inline-link;
     }
 }
 

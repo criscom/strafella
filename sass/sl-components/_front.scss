@@ -20,6 +20,9 @@
         margin-bottom: 36px;
         padding-bottom: 36px;
         border-bottom: 1px solid $gray;
+        @include breakpoint($max480) {
+            font-size: 20px;
+        }
     }
     .field-name-body {
         p:first-child {
