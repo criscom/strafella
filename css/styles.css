@@ -3462,7 +3462,7 @@ p > img {
 .sidebar ul li.menu__item.is-leaf,
 .sidebar ul li.menu__item.is-expanded {
   list-style: none;
-  padding: 10px 0;
+  padding: 8px 0;
 }
 /* line 11, ../sass/library/_lists.scss */
 .sidebar ul li.menu__item.is-leaf li,
@@ -3476,7 +3476,7 @@ p > img {
 .sidebar ul li.menu__item.is-expanded a {
   text-decoration: none;
   display: block;
-  padding-left: 12px;
+  padding: 2px 0 2px 12px;
   -webkit-transition: background 0.3s ease 0.1s;
   -o-transition: background 0.3s ease 0.1s;
   transition: background 0.3s ease 0.1s;

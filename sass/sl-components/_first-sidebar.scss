@@ -81,11 +81,11 @@
         li.menu__item.is-leaf,
         li.menu__item.is-expanded {
             @include no-bullets;
-            padding: 10px 0;
+            padding: 8px 0;
             a {
                 text-decoration: none;
                 display: block;
-                padding-left: 12px;
+                padding: 2px 0 2px 12px;
                 @include transition(background 0.3s ease 0.1s);
                 @include border-radius(11px);
                 // background-image: image-url('glyphicons-halflings-72-play.svg');
