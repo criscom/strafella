@@ -24,17 +24,17 @@ Drupal.behaviors.my_custom_behavior = {
   attach: function(context, settings) {
 
     $(document).ready(function(){
-        $('#block-system-main-menu ul li.first').removeClass('leaf');
-        $('#block-system-main-menu ul li.last').removeClass('leaf');
-         $('#block-system-main-menu ul li.leaf').prepend('<span class="halflings halflings-play"></span>');
-        $('#block-system-main-menu ul li.first').prepend('<span class="glyphicon glyphicon-home"></span>');
-        $('#block-system-main-menu ul li.last').prepend('<span class="halflings halflings-play"></span>');  
+        // $('#block-system-main-menu ul li.first').removeClass('leaf');
+        // $('#block-system-main-menu ul li.last').removeClass('leaf');
+        //  $('#block-system-main-menu ul li.leaf').prepend('<span class="halflings halflings-play"></span>');
+        // $('#block-system-main-menu ul li.first').prepend('<span class="glyphicon glyphicon-home"></span>');
+        // $('#block-system-main-menu ul li.last').prepend('<span class="halflings halflings-play"></span>');  
 
-        $('#block-menu-menu-secondary-menu ul>li>ul>li.leaf').prepend('<span class="halflings halflings-menu-right"></span>');
-        $('#block-menu-menu-secondary-menu>ul>li.leaf').prepend('<span class="halflings halflings-play"></span>');
+        // $('#block-menu-menu-secondary-menu ul>li>ul>li.leaf').prepend('<span class="halflings halflings-menu-right"></span>');
+        // $('#block-menu-menu-secondary-menu>ul>li.leaf').prepend('<span class="halflings halflings-play"></span>');
 
-        $('#block-menu-menu-rechte-sidebar ul li.first').prepend('<span class="glyphicons glyphicons-pencil"></span>');
-        $('#block-menu-menu-rechte-sidebar ul li.last').prepend('<span class="glyphicons glyphicons-education"></span>');
+        //$('#block-menu-menu-rechte-sidebar ul li.first').prepend('<span class="glyphicons glyphicons-pencil"></span>');
+        //$('#block-menu-menu-rechte-sidebar ul li.last').prepend('<span class="glyphicons glyphicons-education"></span>');
     });
 
   }

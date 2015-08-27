@@ -3367,7 +3367,7 @@ p > img {
   background-color: #e5e5e5;
   border: 1px solid #d1d1d1;
   text-shadow: #f9f9f9 0 1px 0;
-  padding: 12px 16px 16px 16px;
+  padding: 12px 8px 16px 8px;
   -moz-border-radius: 11px;
   -webkit-border-radius: 11px;
   border-radius: 11px;
@@ -3376,26 +3376,28 @@ p > img {
 /* line 16, ../sass/sl-components/_first-sidebar.scss */
 #block-block-1 p {
   font-size: 16px;
+  padding-left: 24px;
 }
 
-/* line 21, ../sass/sl-components/_first-sidebar.scss */
+/* line 23, ../sass/sl-components/_first-sidebar.scss */
 #block-block-1,
 #block-menu-menu-rechte-sidebar {
   background-color: transparent;
   box-shadow: 0 0 1px #ddd;
 }
 
-/* line 29, ../sass/sl-components/_first-sidebar.scss */
+/* line 31, ../sass/sl-components/_first-sidebar.scss */
 #block-menu-menu-rechte-sidebar h2 {
   font-weight: normal;
   margin: 0;
   font-size: 22px;
+  padding-left: 24px;
 }
-/* line 34, ../sass/sl-components/_first-sidebar.scss */
+/* line 37, ../sass/sl-components/_first-sidebar.scss */
 #block-menu-menu-rechte-sidebar ul {
   margin-top: 0;
 }
-/* line 37, ../sass/sl-components/_first-sidebar.scss */
+/* line 40, ../sass/sl-components/_first-sidebar.scss */
 #block-menu-menu-rechte-sidebar li {
   word-wrap: break-word;
   -webkit-hyphens: auto;
@@ -3405,18 +3407,18 @@ p > img {
   hyphens: auto;
   position: relative;
 }
-/* line 40, ../sass/sl-components/_first-sidebar.scss */
+/* line 43, ../sass/sl-components/_first-sidebar.scss */
 #block-menu-menu-rechte-sidebar li span {
   padding-right: 4px;
   color: #9fa1a2;
   top: 4px;
 }
-/* line 47, ../sass/sl-components/_first-sidebar.scss */
+/* line 50, ../sass/sl-components/_first-sidebar.scss */
 #block-menu-menu-rechte-sidebar li.is-active-trail span {
   color: #535456;
 }
 
-/* line 55, ../sass/sl-components/_first-sidebar.scss */
+/* line 58, ../sass/sl-components/_first-sidebar.scss */
 .sidebar ul {
   padding-left: 0;
   list-style: none;
@@ -3427,7 +3429,7 @@ p > img {
   list-style-type: none;
   margin-left: 0;
 }
-/* line 58, ../sass/sl-components/_first-sidebar.scss */
+/* line 61, ../sass/sl-components/_first-sidebar.scss */
 .sidebar ul li {
   word-wrap: break-word;
   -webkit-hyphens: auto;
@@ -3438,7 +3440,7 @@ p > img {
   font-size: 16px;
   position: relative;
 }
-/* line 63, ../sass/sl-components/_first-sidebar.scss */
+/* line 66, ../sass/sl-components/_first-sidebar.scss */
 .sidebar ul .glyphicon,
 .sidebar ul .halflings {
   position: relative;
@@ -3447,20 +3449,20 @@ p > img {
   color: #c6c7c8;
   padding-right: 4px;
 }
-/* line 71, ../sass/sl-components/_first-sidebar.scss */
+/* line 74, ../sass/sl-components/_first-sidebar.scss */
 .sidebar ul .glyphicon {
   top: 0 !important;
   bottom: 5px;
 }
-/* line 75, ../sass/sl-components/_first-sidebar.scss */
+/* line 78, ../sass/sl-components/_first-sidebar.scss */
 .sidebar ul .halflings {
   top: 5px;
 }
-/* line 78, ../sass/sl-components/_first-sidebar.scss */
+/* line 81, ../sass/sl-components/_first-sidebar.scss */
 .sidebar ul li.menu__item.is-leaf,
 .sidebar ul li.menu__item.is-expanded {
   list-style: none;
-  padding: 8px 0;
+  padding: 10px 0;
 }
 /* line 11, ../sass/library/_lists.scss */
 .sidebar ul li.menu__item.is-leaf li,
@@ -3469,46 +3471,71 @@ p > img {
   list-style-type: none;
   margin-left: 0;
 }
-/* line 82, ../sass/sl-components/_first-sidebar.scss */
+/* line 85, ../sass/sl-components/_first-sidebar.scss */
 .sidebar ul li.menu__item.is-leaf a,
 .sidebar ul li.menu__item.is-expanded a {
+  text-decoration: none;
+  display: block;
+  padding-left: 12px;
   -webkit-transition: background 0.3s ease 0.1s;
   -o-transition: background 0.3s ease 0.1s;
   transition: background 0.3s ease 0.1s;
-  text-decoration: none;
+  -moz-border-radius: 11px;
+  -webkit-border-radius: 11px;
+  border-radius: 11px;
 }
-/* line 85, ../sass/sl-components/_first-sidebar.scss */
+/* line 95, ../sass/sl-components/_first-sidebar.scss */
+.sidebar ul li.menu__item.is-leaf a:before,
+.sidebar ul li.menu__item.is-expanded a:before {
+  font-family: "Glyphicons Halflings";
+  content: "\e072";
+  font-size: 12px;
+  padding-right: 8px;
+  color: #c6c7c8;
+}
+/* line 102, ../sass/sl-components/_first-sidebar.scss */
 .sidebar ul li.menu__item.is-leaf a:hover,
 .sidebar ul li.menu__item.is-expanded a:hover {
   text-decoration: none;
   color: #007C31;
-  border-bottom: 1px solid #007C31;
+  background: #c6c7c8;
 }
-/* line 90, ../sass/sl-components/_first-sidebar.scss */
+/* line 106, ../sass/sl-components/_first-sidebar.scss */
+.sidebar ul li.menu__item.is-leaf a:hover:before,
+.sidebar ul li.menu__item.is-expanded a:hover:before {
+  color: #a2a3a5;
+}
+/* line 110, ../sass/sl-components/_first-sidebar.scss */
 .sidebar ul li.menu__item.is-leaf a.active,
 .sidebar ul li.menu__item.is-expanded a.active {
   color: #007C31;
 }
-/* line 99, ../sass/sl-components/_first-sidebar.scss */
-.sidebar ul li.menu__item.is-active-trail span {
+/* line 119, ../sass/sl-components/_first-sidebar.scss */
+.sidebar ul li.menu__item.is-active-trail span, .sidebar ul li.menu__item.is-active-trail a:before {
   color: #a2a3a5;
 }
-/* line 104, ../sass/sl-components/_first-sidebar.scss */
+/* line 124, ../sass/sl-components/_first-sidebar.scss */
 .sidebar ul .nolink > span {
   font-weight: 500;
   color: #231f20 !important;
+  padding-left: 12px;
 }
-/* line 110, ../sass/sl-components/_first-sidebar.scss */
+/* line 131, ../sass/sl-components/_first-sidebar.scss */
 .sidebar ul li.menu__item.is-expanded ul.menu li {
   padding-left: 16px;
 }
-/* line 113, ../sass/sl-components/_first-sidebar.scss */
+/* line 134, ../sass/sl-components/_first-sidebar.scss */
 .sidebar ul li.menu__item.is-expanded ul.menu li.last {
   margin-bottom: 16px;
 }
 
+/* line 142, ../sass/sl-components/_first-sidebar.scss */
+#block-system-main-menu li.menu__item.is-leaf.first a:before {
+  content: "\e021";
+}
+
 @media (max-width: 959px) {
-  /* line 121, ../sass/sl-components/_first-sidebar.scss */
+  /* line 148, ../sass/sl-components/_first-sidebar.scss */
   #block-block-1,
   #block-menu-menu-rechte-sidebar {
     -webkit-box-shadow: 0 0 0 0;
@@ -3517,13 +3544,13 @@ p > img {
   }
 }
 @media (max-width: 767px) {
-  /* line 129, ../sass/sl-components/_first-sidebar.scss */
+  /* line 156, ../sass/sl-components/_first-sidebar.scss */
   #block-menu-menu-secondary-menu {
     display: none;
   }
 }
 @media (min-width: 768px) {
-  /* line 136, ../sass/sl-components/_first-sidebar.scss */
+  /* line 163, ../sass/sl-components/_first-sidebar.scss */
   #block-system-main-menu ul li.team,
   #block-system-main-menu ul li.wissenswertes,
   #block-system-main-menu ul li.kontakt,
