@@ -56,6 +56,7 @@
         padding-left: 0;
         @include no-bullets;
         li {
+            @include hyphens();
             font-size: 16px;
             position: relative;
         }
@@ -77,12 +78,14 @@
         li.menu__item.is-leaf,
         li.menu__item.is-expanded {
             @include no-bullets;
-            padding: 4px 0;
+            padding: 8px 0;
             a {
+                @include transition(background 0.3s ease 0.1s);
                 text-decoration: none;
                 &:hover {
-                    text-decoration: hover;
+                    text-decoration: none;
                     color: $green;
+                    border-bottom: 1px solid $green;
                 }
                 &.active {
                     color: $green;
@@ -122,8 +125,21 @@
     }
 }
 
-@include breakpoint($desktop) { // hide menu item "Team" in main menu on desktop browsers
-    #block-system-main-menu ul li.last {
+@include breakpoint($max767) {
+    #block-menu-menu-secondary-menu { // hide secondary menu on mobile devices  
         display: none;
+    }
+}
+
+@include breakpoint($desktop) { 
+    #block-system-main-menu {
+        ul li.team, // hide menu item "Team" in main menu on desktop browsers
+        ul li.wissenswertes,
+        ul li.kontakt,
+        ul li.links,
+        ul li.impressum
+                    { 
+        display: none;
+        }
     }
 }
