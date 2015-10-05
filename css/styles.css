@@ -1326,7 +1326,7 @@ th {
   *position: relative;
   *zoom: 1;
 }
-/* line 45, ../../../../../../Library/Ruby/Gems/2.0.0/gems/zen-grids-1.4/stylesheets/zen-grids/_grids.scss */
+/* line 45, ../../../../../../Library/Ruby/Gems/2.0.0/gems/zen-grids-2.0.0.beta.3/stylesheets/zen-grids/_grids.scss */
 .header:before, .header:after,
 .main:before,
 .main:after,
@@ -1335,7 +1335,7 @@ th {
   content: "";
   display: table;
 }
-/* line 50, ../../../../../../Library/Ruby/Gems/2.0.0/gems/zen-grids-1.4/stylesheets/zen-grids/_grids.scss */
+/* line 50, ../../../../../../Library/Ruby/Gems/2.0.0/gems/zen-grids-2.0.0.beta.3/stylesheets/zen-grids/_grids.scss */
 .header:after,
 .main:after,
 .footer:after {
@@ -1457,12 +1457,12 @@ th {
     /* Span 1 column, starting in the 2nd column from left. */
     /* Span 1 column, starting in the 3rd column from left. */
   }
-  /* line 45, ../../../../../../Library/Ruby/Gems/2.0.0/gems/zen-grids-1.4/stylesheets/zen-grids/_grids.scss */
+  /* line 45, ../../../../../../Library/Ruby/Gems/2.0.0/gems/zen-grids-2.0.0.beta.3/stylesheets/zen-grids/_grids.scss */
   .two-sidebars .region-sidebar-second:before, .two-sidebars .region-sidebar-second:after {
     content: "";
     display: table;
   }
-  /* line 50, ../../../../../../Library/Ruby/Gems/2.0.0/gems/zen-grids-1.4/stylesheets/zen-grids/_grids.scss */
+  /* line 50, ../../../../../../Library/Ruby/Gems/2.0.0/gems/zen-grids-2.0.0.beta.3/stylesheets/zen-grids/_grids.scss */
   .two-sidebars .region-sidebar-second:after {
     clear: both;
   }
@@ -3286,7 +3286,7 @@ ul.language-switcher-locale-url li a {
 ** added by criscom
 */
 /* line 6, ../sass/sl-components/_default.scss */
-img {
+p > img {
   width: 100% !important;
   height: auto !important;
 }
@@ -3515,6 +3515,12 @@ img.mietzins {
 @media (min-width: 768px) {
   /* line 126, ../sass/sl-components/_first-sidebar.scss */
   #block-system-main-menu ul li.last {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  /* line 132, ../sass/sl-components/_first-sidebar.scss */
+  .region-sidebar-second {
     display: none;
   }
 }
@@ -3962,26 +3968,15 @@ ul.nice-menu ul li a:active {
 ** max-width: 767px
 ** 
 */
-@media (max-width: 768px) {
-  /* line 11, ../sass/sl-components/_main-menu-mobile.scss */
-  .main-navigation {
-    width: 100%;
-  }
+/* line 8, ../sass/sl-components/_main-menu-mobile.scss */
+.mean-container .mean-bar {
+  position: fixed;
+}
 
-  /* line 16, ../sass/sl-components/_main-menu-mobile.scss */
-  .responsive-menus.responsified span.toggler, .responsive-menus.responsified .responsive-menus-simple {
-    background: #c6c7c8;
-    box-shadow: 2px 2px 2px #acaeaf;
-    color: #333;
-  }
-  /* line 20, ../sass/sl-components/_main-menu-mobile.scss */
-  .responsive-menus.responsified span.toggler li a, .responsive-menus.responsified .responsive-menus-simple li a {
-    color: #333;
-  }
-
-  /* line 25, ../sass/sl-components/_main-menu-mobile.scss */
-  .block-nice-menus {
-    display: none;
+@media (max-width: 767px) {
+  /* line 12, ../sass/sl-components/_main-menu-mobile.scss */
+  .page {
+    padding-top: 45px;
   }
 }
 /* CSS code for panel page one col two rows
