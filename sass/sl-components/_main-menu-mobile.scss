@@ -6,7 +6,7 @@
 */
 
 .mean-container .mean-bar {
-    position: fixed; // makes the main menu stick at the top on mobile devices
+    // position: fixed; // makes the main menu stick at the top on mobile devices
 }
 @include breakpoint($max767) {
     .page {
