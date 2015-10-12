@@ -141,5 +141,8 @@
                     { 
         display: none;
         }
+@include breakpoint($max767) { // hide right sidebar on all mobile (phone) devices
+    .region-sidebar-second {
+        display: none;
     }
 }

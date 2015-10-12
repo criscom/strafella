@@ -1326,7 +1326,11 @@ th {
   *position: relative;
   *zoom: 1;
 }
+<<<<<<< HEAD
 /* line 45, ../../../../../../../../../Users/cpotzinger/.rvm/gems/ruby-1.9.3-p448/gems/zen-grids-2.0.0.beta.3/stylesheets/zen-grids/_grids.scss */
+=======
+/* line 45, ../../../../../../Library/Ruby/Gems/2.0.0/gems/zen-grids-2.0.0.beta.3/stylesheets/zen-grids/_grids.scss */
+>>>>>>> 1a19c0c78c87633e53fd82567cca84ee8e12493e
 .header:before, .header:after,
 .main:before,
 .main:after,
@@ -1335,7 +1339,11 @@ th {
   content: "";
   display: table;
 }
+<<<<<<< HEAD
 /* line 50, ../../../../../../../../../Users/cpotzinger/.rvm/gems/ruby-1.9.3-p448/gems/zen-grids-2.0.0.beta.3/stylesheets/zen-grids/_grids.scss */
+=======
+/* line 50, ../../../../../../Library/Ruby/Gems/2.0.0/gems/zen-grids-2.0.0.beta.3/stylesheets/zen-grids/_grids.scss */
+>>>>>>> 1a19c0c78c87633e53fd82567cca84ee8e12493e
 .header:after,
 .main:after,
 .footer:after {
@@ -1457,12 +1465,20 @@ th {
     /* Span 1 column, starting in the 2nd column from left. */
     /* Span 1 column, starting in the 3rd column from left. */
   }
+<<<<<<< HEAD
   /* line 45, ../../../../../../../../../Users/cpotzinger/.rvm/gems/ruby-1.9.3-p448/gems/zen-grids-2.0.0.beta.3/stylesheets/zen-grids/_grids.scss */
+=======
+  /* line 45, ../../../../../../Library/Ruby/Gems/2.0.0/gems/zen-grids-2.0.0.beta.3/stylesheets/zen-grids/_grids.scss */
+>>>>>>> 1a19c0c78c87633e53fd82567cca84ee8e12493e
   .two-sidebars .region-sidebar-second:before, .two-sidebars .region-sidebar-second:after {
     content: "";
     display: table;
   }
+<<<<<<< HEAD
   /* line 50, ../../../../../../../../../Users/cpotzinger/.rvm/gems/ruby-1.9.3-p448/gems/zen-grids-2.0.0.beta.3/stylesheets/zen-grids/_grids.scss */
+=======
+  /* line 50, ../../../../../../Library/Ruby/Gems/2.0.0/gems/zen-grids-2.0.0.beta.3/stylesheets/zen-grids/_grids.scss */
+>>>>>>> 1a19c0c78c87633e53fd82567cca84ee8e12493e
   .two-sidebars .region-sidebar-second:after {
     clear: both;
   }
@@ -3532,6 +3548,12 @@ p > img {
     display: none;
   }
 }
+@media (max-width: 767px) {
+  /* line 132, ../sass/sl-components/_first-sidebar.scss */
+  .region-sidebar-second {
+    display: none;
+  }
+}
 /* CSS code for the fonts integration
 ** added by criscom
 ** this file contains general font declarations that apply to fonts across the site
@@ -3976,26 +3998,15 @@ ul.nice-menu ul li a:active {
 ** max-width: 767px
 ** 
 */
-@media (max-width: 768px) {
-  /* line 11, ../sass/sl-components/_main-menu-mobile.scss */
-  .main-navigation {
-    width: 100%;
-  }
+/* line 8, ../sass/sl-components/_main-menu-mobile.scss */
+.mean-container .mean-bar {
+  position: fixed;
+}
 
-  /* line 16, ../sass/sl-components/_main-menu-mobile.scss */
-  .responsive-menus.responsified span.toggler, .responsive-menus.responsified .responsive-menus-simple {
-    background: #c6c7c8;
-    box-shadow: 2px 2px 2px #acaeaf;
-    color: #333;
-  }
-  /* line 20, ../sass/sl-components/_main-menu-mobile.scss */
-  .responsive-menus.responsified span.toggler li a, .responsive-menus.responsified .responsive-menus-simple li a {
-    color: #333;
-  }
-
-  /* line 25, ../sass/sl-components/_main-menu-mobile.scss */
-  .block-nice-menus {
-    display: none;
+@media (max-width: 767px) {
+  /* line 12, ../sass/sl-components/_main-menu-mobile.scss */
+  .page {
+    padding-top: 45px;
   }
 }
 /* CSS code for panel page one col two rows

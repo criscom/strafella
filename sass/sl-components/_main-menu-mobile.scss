@@ -5,29 +5,11 @@
 ** 
 */
 
-// Hide responsive menu
-@include breakpoint($max768)
-{
-    .main-navigation {
-        // top: 4px;
-        width: $zen-grid-width;
-    }
-    .responsive-menus.responsified {
-        span.toggler, .responsive-menus-simple {
-            background: $header-color;
-            box-shadow: 2px 2px 2px darken($header-color, 10%);
-            color: #333;
-            li a {
-                color: #333;
-            }
-        }
-    }
-    .block-nice-menus
-    {
-        display: none;
-    }
-    .region-navigation {
-        // margin: 16px 0;
-        // margin: 1rem 0;
+.mean-container .mean-bar {
+    position: fixed; // makes the main menu stick at the top on mobile devices
+}
+@include breakpoint($max767) {
+    .page {
+        padding-top: 45px; // moves the page down in order for the logo to be visible due to sticky menu
     }
 }
